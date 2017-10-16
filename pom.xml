@@ -4,7 +4,7 @@
 
 	<groupId>com.capgemini.hr</groupId>
 	<artifactId>rotation</artifactId>
-	<version>1.1.2-SNAPSHOT</version>
+	<version>1.1.0-NAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>rotation</name>
