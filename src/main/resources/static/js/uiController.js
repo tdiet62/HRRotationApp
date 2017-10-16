@@ -33,6 +33,7 @@ var UIController = (function(cardCreator){
     var showDetailsAnimated = function(item){
         $('#details-card').append(cardCreator.createDetailCard(item))
         $('#search-container').hide(400);
+        $('#click-prompt').hide();
         $('#carousel-container').hide(400);
         $('#details-container').show(400);
     }
@@ -45,6 +46,7 @@ var UIController = (function(cardCreator){
     var hideDetailsAnimated = function(){
         $('#details-container').hide(400);
         $('#search-container').show(400);
+        $('#click-prompt').show();
         $('#carousel-container').show(400);
         $('#details-card').empty();
     }
