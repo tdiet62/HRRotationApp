@@ -1,0 +1,101 @@
+#search-container {
+    margin-top:20px;
+}
+
+#searchTable {
+    /*background: no-repeat 10px 12px white;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    box-sizing: border-box;*/
+}
+
+#click-prompt {
+    width: 90%;
+    margin: auto;
+    font-size: smaller;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.card-layout-well {
+    background-color: #e1edf2 !important;
+    /*min-height: 500px;*/
+}
+
+
+#carousel-container {
+    margin: auto;
+    overflow:auto;
+    width: 90%;
+}
+
+.carousel-row {
+}
+
+.assignment-column {
+  /*  width: 500px;*/
+    margin-right:30px;
+    margin-top:10px;
+    margin-bottom: 30px;
+}
+
+.assignment-card {
+    background-color: #e1edf2 !important;
+    padding-top: 10px;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    min-width:400px !important;
+}
+
+.assignment-title {
+    word-break: normal;
+    min-height: 130px;
+}
+
+.assignment-data {
+    margin-left: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space:normal;
+}
+
+.alabel {
+    color: grey;
+    font-style: italic;
+    font-size:small;
+    margin-right: 10px;
+}
+
+.alabel::after {
+    content:':'
+}
+
+.inner-card {
+    margin-left: 20px;
+    margin-right:20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.right {
+    float:right;
+}
+
+#details-container {
+    margin-top: 30px;
+
+}
+
+@media print {
+    #hide-details-button {
+        display: none !important;
+    }
+}

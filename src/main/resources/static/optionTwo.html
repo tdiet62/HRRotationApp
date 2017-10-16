@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+
+    <link rel="stylesheet" href="css/bootstrap-stylesheet.css"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body class="body">
+<header id="header" style="background-color: white">
+    <div id="zone-header-second" class="well">
+        <div id="zone-header-second-inner" class="container">
+
+            <a style="padding: 50px" href="https://www.uk.capgemini.com/" title="Home" rel="home" id="logo"><img
+                    src="https://www.uk.capgemini.com/sites/all/themes/capgemini/logo.png" alt="Home"/></a>
+
+        </div>
+    </div>
+</header>
+
+<main class="main">
+
+    <div>
+        <h1 class="heading">Browse the available roles, or try to search for your desired role</h1>
+        <div>
+            <input type="text" class="searchTable" id="searchTable" onkeyup="searchTable(event)"
+                   placeholder="Enter keywords to search, separated by a space e.g. Java Birmingham ">
+        </div>
+
+        <div>
+            <div id="showData" class="showData well pre-scrollable">
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="js/personRequestsScripts2.js"></script>
+
+</body>
+</html>

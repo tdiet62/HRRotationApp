@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+
+    <link rel="stylesheet" href="css/table-style.css"/>
+    <script src="js/personRequestsScripts.js"></script>
+
+</head>
+<body class="body" onload="initTable();">
+<header id="header" style="background-color: white">
+    <div id="zone-header-second">
+        <div id="zone-header-second-inner" class="container">
+
+            <a style="padding: 50px" href="https://www.uk.capgemini.com/" title="Home" rel="home" id="logo"><img
+                    src="https://www.uk.capgemini.com/sites/all/themes/capgemini/logo.png" alt="Home"/></a>
+
+        </div>
+    </div>
+</header>
+
+<main class="main">
+
+    <div>
+        <h1 class="heading">Browse the available roles, or try to search for what your looking for</h1>
+        <div>
+            <input type="text" class="searchTable" id="searchTable" onkeyup="searchTable(event)"
+                   placeholder="Enter keywords to search, separated by a space e.g. Java Birmingham ">
+        </div>
+
+        <div>
+            <div id="showData" class="table table-bordered table-hover table-condensed"></div>
+        </div>
+    </div>
+</main>
+
+
+</body>
+</html>

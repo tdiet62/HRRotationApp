@@ -1,0 +1,48 @@
+
+.body {
+    margin: 0;
+    background-color: #F3F4F5;
+}
+
+.heading {
+    font-family: Calibri, serif;
+    color: #4DADF7;
+}
+
+.main {
+    margin: 10px;
+}
+
+#searchTable {
+    background: no-repeat 10px 12px white;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+#personRequestsTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+    font-family: Calibri, serif;
+    /*padding-right: 1px*/
+}
+
+#personRequestsTable th, #personRequestsTable td {
+    text-align: left;
+    padding: 12px;
+}
+
+#personRequestsTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#personRequestsTable tr.header, #personRequestsTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
