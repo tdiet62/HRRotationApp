@@ -12,8 +12,12 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/tdiet62/HRRotationApp</developerConnection>
+
       <tag>HEAD</tag>
   </scm>
+    <distributionManagement>
+        <downloadUrl>https://github.com/tdiet62/HRRotationApp</downloadUrl>
+    </distributionManagement>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
