@@ -11,5 +11,5 @@
    If the file 'resourcing-spreadsheet.xlsx' is present in the working directory, ensure that the index.html page displays a list of available roles.
    If that file IS NOT present (for any reason) contact Claire Tuckwell (claire.tuckwell@capgemini.com) for a copy of the latest file to upload.
    
-6 Assuming the tests pass, it should now be possible to remove the windows service for the previous version.
+6. Assuming the tests pass, it should now be possible to remove the windows service for the previous version.
   
