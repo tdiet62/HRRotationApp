@@ -26,7 +26,7 @@ public class PersonRequestExcelServiceImpl implements PersonRequestExcelService 
     }
 
     public List<PersonRequest> readDataFromUnformattedExcelFile(String fileName) throws FileNotFoundException {
-        List<PersonRequest> allPersonRequests = new ArrayList();
+        List<PersonRequest> allPersonRequests = new ArrayList<PersonRequest>();
         File resourcingSpreadsheet = new File(fileName);
 
         try {
@@ -106,7 +106,7 @@ public class PersonRequestExcelServiceImpl implements PersonRequestExcelService 
          * This code is intended to catch this situation and degrade gracefully without throing any error
          */
 
-        String roleDescription="";
+        String roleDescription;
         try{
             roleDescription=currentRow.getCell( 24).toString();
         } catch (NullPointerException ex){

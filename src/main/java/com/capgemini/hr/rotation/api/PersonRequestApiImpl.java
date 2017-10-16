@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 @CrossOrigin
 public class PersonRequestApiImpl implements PersonRequestApi {
     private final Logger LOGGER = Logger.getLogger(PersonRequestApiImpl.class);
-    private PersonRequestExcelService personRequestExcelService;
+    private final PersonRequestExcelService personRequestExcelService;
 
     @Autowired
     public PersonRequestApiImpl(PersonRequestExcelService personRequestExcelService) {
@@ -38,13 +38,11 @@ public class PersonRequestApiImpl implements PersonRequestApi {
         try {
             String likelihood100Percent = "100% Firm";
             List<PersonRequest> personRequests = this.personRequestExcelService.readDataFromUnformattedExcelFile("resourcing-spreadsheet.xlsx");
-            filteredPersonRequests = (List)personRequests.stream().filter((pr) -> {
-                return pr.getLikelihood().equalsIgnoreCase("100% Firm");
-            }).collect(Collectors.toList());
+            filteredPersonRequests = personRequests.stream().filter((pr) -> pr.getLikelihood().equalsIgnoreCase("100% Firm")).collect(Collectors.toList());
         } catch (FileNotFoundException var4) {
             this.LOGGER.info(var4.getStackTrace());
         }
 
-        return filteredPersonRequests == null ? new ResponseEntity(HttpStatus.NOT_FOUND) : new ResponseEntity(filteredPersonRequests, HttpStatus.OK);
+        return filteredPersonRequests == null ?  new ResponseEntity(HttpStatus.NOT_FOUND) : new ResponseEntity(filteredPersonRequests, HttpStatus.OK);
     }
 }

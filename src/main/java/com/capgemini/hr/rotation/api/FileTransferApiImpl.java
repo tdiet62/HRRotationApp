@@ -22,7 +22,7 @@ import java.util.Iterator;
 @RequestMapping({"rest/file-transfer"})
 @CrossOrigin
 public class FileTransferApiImpl implements FileTransferApi {
-    private FileTransferService fileTransferService;
+    private final FileTransferService fileTransferService;
     private final Logger LOGGER = Logger.getLogger(FileTransferApiImpl.class);
 
     @Autowired

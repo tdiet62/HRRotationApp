@@ -11,7 +11,7 @@ public class HrRotationApp {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(HrRotationApp.class, new String[0]);
+        SpringApplication.run(HrRotationApp.class);
     }
 }
 

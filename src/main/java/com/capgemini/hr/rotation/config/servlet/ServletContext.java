@@ -10,6 +10,6 @@ public class ServletContext extends WebMvcConfigurerAdapter {
     }
 
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler(new String[]{"/resources/**"}).addResourceLocations(new String[]{"/resources/"});
+        registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
     }
 }
